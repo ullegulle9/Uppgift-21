@@ -30,25 +30,7 @@ const CREATE_NEW_ACCOUNT = 'CREATE_NEW_ACCOUNT',
 	CHECK_BALANCE = 'CHECK_BALANCE'
 
 
-/*
-let checkBalance = {
-	type: CHECK_BALANCE,
-	accountToBeChecked: 'accountId'
-}
 
-let createAccount = {
-	type: CREATE_NEW_ACCOUNT,
-	account: {
-		name: 'name3',
-		accountId: 'id3',
-		balance: 0,
-		dateCreated: '2016-01-01',
-		deposits: [],
-		withdrawals: [],
-		transfers: []
-	}
-}
-*/
 
 
 function actionCreateAccount(name, date, personalNumber) {
@@ -61,15 +43,7 @@ function actionCreateAccount(name, date, personalNumber) {
 }
 
 
-/*
-let deposit = {
-	type: DEPOSIT_MONEY,
-	account: 'accountId',
-	amount: 100,
-	date: '2017-01-01'
-}
 
-*/
 
 function actionDeposit(id, amount) {
 	return {
@@ -95,24 +69,6 @@ function actionTransfer(id, amount) {
 	}
 }
 
-/*
-
-let withdraw = {
-	type: WITHDRAW_MONEY,
-	account: 'accountId',
-	amount: 100,
-	date: '2017-01-01'
-}
-
-let transfer = {
-	type: TRANSFER_FUNDS,
-	account: 'accountId',
-	amount: 100,
-	reciever: 'recieverId',
-	date: '2017-01-01'
-}
-
-*/
 
 
 // Reducer
